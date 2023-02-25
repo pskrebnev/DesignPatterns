@@ -20,5 +20,10 @@ public class Demo {
         System.out.println("Green products (new implementation)");
         fa.filter(products, new ColorSpecification(Color.GREEN))
                 .forEach(p -> System.out.println(" - " + p.name + " is green."));
+
+        System.out.println("By color and size: blue and small item");
+        fa.filter(products, new AndSpecification<>(new ColorSpecification(Color.BLUE)
+                , new SizeSpecification(Size.SMALL)))
+                .forEach(p -> System.out.println(" - " + p.name + " Blue and Small"));
     }
 }
