@@ -16,5 +16,9 @@ public class Demo {
         pf.filterByColor(products, Color.GREEN)
                 .forEach(p -> System.out.println(" - " + p.name + " is green"));
 
+        FilterAmended fa = new FilterAmended();
+        System.out.println("Green products (new implementation)");
+        fa.filter(products, new ColorSpecification(Color.GREEN))
+                .forEach(p -> System.out.println(" - " + p.name + " is green."));
     }
 }
