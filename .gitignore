@@ -2,3 +2,8 @@
 /.gradle/
 /.idea/
 /gradle/
+
+/gradlew.bat
+/DesignPatterns.iml
+/gradlew
+#/settings.gradle
