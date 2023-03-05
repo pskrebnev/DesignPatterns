@@ -1,4 +1,6 @@
-package org.simple.designpatterns.openclose;
+package org.simple.designpatterns.newstuff.enums.filter;
+
+import org.simple.designpatterns.newstuff.enums.specs.Specification;
 
 import java.util.List;
 import java.util.stream.Stream;
