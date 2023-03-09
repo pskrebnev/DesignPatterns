@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class HtmlElement {
-    String name;
-    String text;
+    public String name;
+    public String text;
 
     public ArrayList<HtmlElement> elements = new ArrayList<>();
     private final int indentSize = 2;
