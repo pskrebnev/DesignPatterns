@@ -11,7 +11,7 @@ public class HtmlBuilder {
         root.name = rootName;
     }
 
-    // not a best implementation
+    // not fluent
     public void addChild(String childName, String childText) {
         HtmlElement e = new HtmlElement(childName, childText);
         root.elements.add(e);
@@ -28,6 +28,7 @@ public class HtmlBuilder {
         root.name = rootName;
     }
 
+    // delegating
     @Override
     public String toString() {
         return root.toString();

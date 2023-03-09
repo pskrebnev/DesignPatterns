@@ -24,7 +24,7 @@ public class HtmlElement {
         String i = String.join("", Collections.nCopies(indent * indentSize, " "));
         sb.append(String.format("%s<%s>%s", i, name, newLine));
 
-        if (text != null && text.isEmpty()) {
+        if (text != null && !text.isEmpty()) {
             sb.append(String.join("", Collections.nCopies(indentSize * (indent + 1), "")))
                     .append(text)
                     .append(newLine);
