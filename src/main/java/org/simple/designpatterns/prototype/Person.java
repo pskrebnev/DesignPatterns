@@ -23,7 +23,6 @@ public class Person implements Cloneable {
     @Override
     public Object clone() throws CloneNotSupportedException {
         Object clone = super.clone();
-        return new Person(new String[] names, )
-
+        return new Person(names.clone(), (Address) address.clone());
     }
 }

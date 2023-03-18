@@ -18,8 +18,9 @@ public class Address implements Cloneable {
                 + "house number = " + houseNumber;
     }
 
+    // deep copy
     @Override
     public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        return new Address(streetName, houseNumber);
     }
 }
