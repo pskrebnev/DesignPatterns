@@ -1,6 +1,6 @@
 package org.simple.designpatterns.prototype;
 
-public class Address {
+public class Address implements Cloneable {
     public String streetName;
     public int houseNumber;
 
@@ -16,5 +16,10 @@ public class Address {
                 + "street name = " + streetName
                 + System.lineSeparator()
                 + "house number = " + houseNumber;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
